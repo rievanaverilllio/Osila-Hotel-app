@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { Lora } from 'next/font/google'
+import LenisProvider from '@/components/providers/LenisProvider'
 
 // Initialize the Lora font with the desired weights and subsets
 const lora = Lora({
@@ -21,7 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={`${lora.variable}`}>
-      <body>{children}</body>
+      <body>
+        <LenisProvider>
+          {children}
+        </LenisProvider>
+      </body>
     </html>
   )
 }
