@@ -9,7 +9,7 @@ Elegant hotel/experience booking UI built with Next.js App Router, TypeScript, a
 - ESLint (Next + TS config)
 
 ## Quick start
-
+ 
 1) Install dependencies
 
 ```powershell
